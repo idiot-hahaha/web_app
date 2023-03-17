@@ -2,8 +2,7 @@ package redis
 
 import (
 	"fmt"
-
-	"github.com/spf13/viper"
+	"web_app/settings"
 
 	"go.uber.org/zap"
 
@@ -12,15 +11,15 @@ import (
 
 var rdb *redis.Client
 
-func Init() (err error) {
+func Init(config *settings.RedisConfig) (err error) {
 	rdb = redis.NewClient(&redis.Options{
 		Addr: fmt.Sprintf("%s:%d",
-			viper.GetString("redis.host"),
-			viper.GetInt("redis.port"),
+			config.Host,
+			config.Port,
 		),
-		Password: viper.GetString("redis.password"), // 密码
-		DB:       viper.GetInt("redis.db"),          // 数据库
-		PoolSize: viper.GetInt("redis.pool_size"),   // 连接池大小
+		Password: config.Password, // 密码
+		DB:       config.Db,       // 数据库
+		PoolSize: config.PoolSize, // 连接池大小
 	})
 	_, err = rdb.Ping().Result()
 	if err != nil {

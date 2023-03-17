@@ -15,3 +15,88 @@
 {"level":"INFO","time":"2023-03-17T17:16:42.221+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
 {"level":"INFO","time":"2023-03-17T17:22:09.893+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2023-03-17T17:22:09.893+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:03:59.735+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"ERROR","time":"2023-03-17T22:04:01.798+0800","caller":"redis/redis.go:27","msg":"redis connect failed","error":"dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-03-17T22:04:01.798+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:04:26.148+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:04:26.162+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:05:46.690+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:05:46.702+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:07:56.201+0800","caller":"web_app/main.go:67","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:07:56.201+0800","caller":"web_app/main.go:76","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:07:59.455+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:07:59.466+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:08:20.779+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T22:08:20.823+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T22:09:23.832+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:09:23.846+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:11:29.228+0800","caller":"web_app/main.go:68","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:11:29.228+0800","caller":"web_app/main.go:77","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:11:46.446+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:11:46.459+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:17:18.549+0800","caller":"web_app/main.go:68","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:17:18.549+0800","caller":"web_app/main.go:77","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:17:22.131+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:17:22.146+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:18:31.798+0800","caller":"web_app/main.go:70","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:18:31.798+0800","caller":"web_app/main.go:79","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:18:35.012+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:18:35.026+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:20:20.419+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:20:20.431+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:21:50.675+0800","caller":"web_app/main.go:70","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:21:50.675+0800","caller":"web_app/main.go:79","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:21:54.624+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:21:54.637+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:22:49.396+0800","caller":"web_app/main.go:70","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T22:22:49.396+0800","caller":"web_app/main.go:79","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T22:44:12.226+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:44:12.239+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T22:59:14.502+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T22:59:14.515+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:02:31.963+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:02:31.976+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:03:03.605+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:03:03.624+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:16:23.678+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:16:23.692+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:16:46.489+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:16:46.502+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:18:18.749+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T23:18:18.794+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T23:19:47.619+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:19:47.632+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:20:47.117+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:20:47.117+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:20:50.543+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:20:50.556+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:21:59.078+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:21:59.078+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:22:02.808+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:22:02.822+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:22:39.672+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:22:39.672+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:22:43.104+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:22:43.116+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:25:52.574+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:25:52.574+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:25:57.418+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:25:57.531+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:28:02.364+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:28:02.364+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:28:05.838+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:28:05.850+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:28:58.632+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:28:58.632+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
+{"level":"INFO","time":"2023-03-17T23:29:02.182+0800","caller":"mysql/mysql.go:33","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T23:29:02.196+0800","caller":"redis/redis.go:30","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T23:29:06.210+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:29:06.212+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:22.615+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:25.230+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:36.005+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:36.005+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:44.145+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:31:44.267+0800","caller":"settings/settings.go:68","msg":"config changed"}
+{"level":"INFO","time":"2023-03-17T23:40:29.204+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T23:40:29.205+0800","caller":"web_app/main.go:78","msg":"Server exiting"}

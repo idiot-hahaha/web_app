@@ -8,9 +8,9 @@ import (
 	"runtime/debug"
 	"strings"
 	"time"
+	"web_app/settings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
@@ -18,17 +18,17 @@ import (
 
 var Logger *zap.Logger
 
-func Init() (err error) {
+func Init(config *settings.LogConfig) (err error) {
 	encoder := getEncoder()
 	writerSyncer := getLogWriter(
-		viper.GetString("log.filename"),
-		viper.GetInt("log.max_size"),
-		viper.GetInt("log.max_backups"),
-		viper.GetInt("log.max_age"),
+		config.Filename,
+		config.MaxSize,
+		config.MaxBackups,
+		config.MaxAge,
 	)
 	Logger = zap.New(zapcore.NewCore(encoder, writerSyncer, zap.DebugLevel))
 	var l = new(zapcore.Level)
-	err = l.UnmarshalText([]byte(viper.GetString("log.level")))
+	err = l.UnmarshalText([]byte(config.Level))
 	if err != nil {
 		return
 	}

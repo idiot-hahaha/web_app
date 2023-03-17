@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"log"
 	"net/http"
 	"os"
 	"os/signal"
@@ -16,8 +15,6 @@ import (
 	"web_app/settings"
 
 	"go.uber.org/zap"
-
-	"github.com/spf13/viper"
 )
 
 func main() {
@@ -26,35 +23,43 @@ func main() {
 		fmt.Printf("init settings err:%v\n", err)
 		return
 	}
+
 	// 2.初始化日志
-	if err := logger.Init(); err != nil {
+	if err := logger.Init(settings.Config.LogConfig); err != nil {
 		fmt.Printf("init logger err:%v\n", err)
 		return
 	}
 	defer zap.L().Sync()
+
 	// 3.初始化MySQL连接
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(settings.Config.MysqlConfig); err != nil {
 		fmt.Printf("init mysql err:%v\n", err)
 		return
 	}
 	defer mysql.Close()
+
 	// 4.初始化Redis连接
-	if err := redis.Init(); err != nil {
+	if err := redis.Init(settings.Config.RedisConfig); err != nil {
 		fmt.Printf("init redis err:%v\n", err)
 		return
 	}
+
 	// 5.注册路由
 	r := routes.Init()
+
 	// 6.启动服务
+	//r.Run(fmt.Sprintf(":%d", settings.Config.Port))
 	srv := &http.Server{
-		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		Addr:    fmt.Sprintf(":%d", settings.Config.Port),
 		Handler: r,
 	}
 
+	// 开启一个goroutine启动服务
 	go func() {
-		// 开启一个goroutine启动服务
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Fatalf("listen: %s\n", err)
+			fmt.Printf("server start failed, err:%v\n", err)
+			zap.L().Error("listen: %s\n", zap.Error(err))
+			return
 		}
 	}()
 
