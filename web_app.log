@@ -1,0 +1,17 @@
+{"level":"INFO","time":"2023-03-17T16:53:43.968+0800","caller":"mysql/mysql.go:34","msg":"database connect success"}
+{"level":"ERROR","time":"2023-03-17T16:53:45.998+0800","caller":"redis/redis.go:28","msg":"redis connect failed","error":"dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2023-03-17T16:53:45.998+0800","caller":"redis/redis.go:31","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T16:54:26.205+0800","caller":"mysql/mysql.go:34","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T16:54:26.215+0800","caller":"redis/redis.go:31","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T16:54:43.023+0800","caller":"mysql/mysql.go:34","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T16:54:43.037+0800","caller":"redis/redis.go:31","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T16:55:03.394+0800","caller":"logger/logger.go:70","msg":"/hello","status":404,"method":"GET","path":"/hello","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T16:55:03.484+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T16:55:06.807+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T16:56:03.734+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T17:16:19.990+0800","caller":"mysql/mysql.go:34","msg":"database connect success"}
+{"level":"INFO","time":"2023-03-17T17:16:20.004+0800","caller":"redis/redis.go:31","msg":"redis connect success"}
+{"level":"INFO","time":"2023-03-17T17:16:42.168+0800","caller":"logger/logger.go:70","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T17:16:42.221+0800","caller":"logger/logger.go:70","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.41","errors":"","cost":0}
+{"level":"INFO","time":"2023-03-17T17:22:09.893+0800","caller":"web_app/main.go:69","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2023-03-17T17:22:09.893+0800","caller":"web_app/main.go:78","msg":"Server exiting"}
