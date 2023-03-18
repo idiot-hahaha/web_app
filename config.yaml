@@ -2,6 +2,8 @@ name: "web_app"
 mode: "dev"
 port: 8081
 version: "0.1.0"
+machine_id: 1
+start_time: "2023-03-01"
 
 log:
   filename: "web_app.log"
@@ -15,7 +17,7 @@ mysql:
   port: 3306
   user: "root"
   password: "12345678"
-  dbname: "sql_demo"
+  dbname: "web_app"
   max_open_conns: 10
   max_idle_conns: 5
 

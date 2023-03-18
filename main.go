@@ -11,6 +11,7 @@ import (
 	"web_app/dao/mysql"
 	"web_app/dao/redis"
 	"web_app/logger"
+	"web_app/pkg/snowflake"
 	"web_app/routes"
 	"web_app/settings"
 
@@ -25,7 +26,7 @@ func main() {
 	}
 
 	// 2.初始化日志
-	if err := logger.Init(settings.Config.LogConfig); err != nil {
+	if err := logger.Init(settings.Config.LogConfig, settings.Config.Mode); err != nil {
 		fmt.Printf("init logger err:%v\n", err)
 		return
 	}
@@ -44,6 +45,16 @@ func main() {
 		return
 	}
 
+	// 初始化snowflake
+	err := snowflake.Init(settings.Config.StartTime, settings.Config.MachineID)
+	if err != nil {
+		fmt.Printf("init snowflake failed, err:%v\n", err)
+		return
+	}
+
+	//if err := controller.InitTrans("zh"); err != nil {
+	//	fmt.Printf("翻译器初始化失败,err:%v\n", err)
+	//}
 	// 5.注册路由
 	r := routes.Init()
 

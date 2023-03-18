@@ -18,7 +18,7 @@ import (
 
 var Logger *zap.Logger
 
-func Init(config *settings.LogConfig) (err error) {
+func Init(config *settings.LogConfig, mode string) (err error) {
 	encoder := getEncoder()
 	writerSyncer := getLogWriter(
 		config.Filename,
@@ -32,7 +32,19 @@ func Init(config *settings.LogConfig) (err error) {
 	if err != nil {
 		return
 	}
-	core := zapcore.NewCore(encoder, writerSyncer, l)
+	var core zapcore.Core
+	if mode == "dev" {
+		core = zapcore.NewTee(
+			zapcore.NewCore(
+				zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig()),
+				zapcore.Lock(os.Stdout),
+				zap.DebugLevel,
+			),
+			zapcore.NewCore(encoder, writerSyncer, l),
+		)
+	} else {
+		core = zapcore.NewCore(encoder, writerSyncer, l)
+	}
 
 	Logger = zap.New(core, zap.AddCaller())
 	zap.ReplaceGlobals(Logger) // 替换zap包中全局的logger实例，后续在其他包中只需使用zap.L()调用即可
